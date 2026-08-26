@@ -1,0 +1,526 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #ede4d1;
+    background-image: url('/vintage_newsprint_bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #11100e;
+    font-family: 'Newsreader', Georgia, Cambria, "Times New Roman", Times, serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* Authentic High-Legibility Gothic & Old English Broadsheet Typography matching user image */
+.font-sahikya-masthead {
+  font-family: 'Cloister Black', 'Old English Text MT', 'Old English Text', 'Chomsky', 'Engravers Old English', 'UnifrakturCook', 'UnifrakturMaguntia', 'Grenze Gotisch', Georgia, serif;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-roman-masthead {
+  font-family: 'Bodoni Moda', 'Playfair Display', 'DM Serif Display', 'Cinzel', Georgia, 'Times New Roman', serif;
+  font-optical-sizing: auto;
+}
+
+.font-medieval {
+  font-family: 'UnifrakturCook', 'Grenze Gotisch', 'UnifrakturMaguntia', 'MedievalSharp', 'Old English Text MT', Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* Ornate Woodcut Illuminated Heading Styles matching user image */
+.bg-parchment-banner {
+  background-color: #f7eedc;
+  background-image: 
+    radial-gradient(ellipse at 50% 50%, rgba(254, 250, 240, 0.7) 0%, rgba(240, 222, 192, 0.85) 60%, rgba(218, 192, 150, 0.95) 100%),
+    radial-gradient(circle at 10% 20%, rgba(180, 145, 95, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(175, 140, 90, 0.25) 0%, transparent 45%);
+}
+
+/* Authentic Aged Parchment Paper Sheet Card matching user reference */
+.parchment-sheet-card {
+  position: relative;
+  background-color: #ede2cd;
+  background-image: 
+    radial-gradient(ellipse at 50% 50%, rgba(255, 252, 245, 0.45) 0%, rgba(245, 235, 215, 0.55) 60%, rgba(205, 175, 130, 0.8) 100%),
+    url('/vintage_deckle_parchment.jpg');
+  background-size: 100% 100%, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #382a1e;
+  border-radius: 3px;
+  box-shadow: 
+    0 12px 28px -6px rgba(45, 30, 15, 0.35),
+    3px 3px 0px #241a12,
+    inset 0 0 35px rgba(110, 70, 25, 0.25);
+}
+
+.parchment-sheet-card::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border: 1px dashed rgba(60, 45, 30, 0.35);
+  pointer-events: none;
+  border-radius: 2px;
+}
+
+.distressed-box {
+  background: rgba(245, 233, 210, 0.85);
+  border: 2px solid #2d241e;
+  box-shadow: 
+    inset 0 0 10px rgba(70, 50, 30, 0.2),
+    2px 2px 0px #2d241e;
+}
+
+
+.font-gothic-condensed {
+  font-family: 'Grenze Gotisch', 'UnifrakturCook', serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.font-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+}
+
+.font-body-news {
+  font-family: 'Newsreader', Georgia, serif;
+  color: #1a1816;
+}
+
+.font-typewriter {
+  font-family: 'Courier Prime', Courier, monospace;
+}
+
+.font-stamp {
+  font-family: 'Special Elite', 'Courier Prime', monospace;
+}
+
+/* Crisp Clean Newspaper Broadsheet Paper */
+.newsprint-sheet {
+  background-color: #fbf7ee;
+  box-shadow: 
+    0 0 0 1px rgba(28, 25, 23, 0.2),
+    0 8px 30px rgba(40, 30, 20, 0.12),
+    0 20px 50px rgba(30, 20, 10, 0.15);
+  position: relative;
+}
+
+/* Clean Vintage Ruled Ledger Grid Texture for Input Area */
+.bg-ledger-grid {
+  background-color: #fdfbf7;
+  background-image: 
+    linear-gradient(to right, rgba(40, 30, 20, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(40, 30, 20, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Authentic Newspaper Broadsheet Paper with subtle antique tone */
+.newsprint-paper {
+  background-color: #fdfbf5;
+  border: 2px solid #11100e;
+  box-shadow: 3px 3px 0px #11100e;
+  position: relative;
+}
+
+.newsprint-card {
+  background-color: #fdfaf4;
+  border: 1.5px solid #11100e;
+  box-shadow: 2px 2px 0px #11100e;
+  position: relative;
+}
+
+.newsprint-card:hover {
+  background-color: #f5eedf;
+}
+
+.newsprint-inset {
+  background-color: #f4edd9;
+  border: 1.5px solid #44403c;
+  box-shadow: inset 1px 1px 3px rgba(30, 25, 20, 0.1);
+}
+
+/* Double Newspaper Broadsheet Rules */
+.border-newspaper-double {
+  border-top: 3px double #11100e;
+  border-bottom: 3px double #11100e;
+}
+
+.border-newspaper-thick-thin {
+  border-top: 3px solid #11100e;
+  border-bottom: 1.5px solid #11100e;
+}
+
+.border-newspaper-bottom-double {
+  border-bottom: 3px double #11100e;
+}
+
+.border-newspaper-top-double {
+  border-top: 3px double #11100e;
+}
+
+/* Rubber Stamp Verdict Badges matching authentic distressed ink */
+.rubber-stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Special Elite', 'Courier Prime', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 2px 7px;
+  border: 2px solid currentColor;
+  border-radius: 2px;
+  transform: rotate(-3deg);
+  mask-image: radial-gradient(circle at 50% 50%, black 85%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, black 85%, transparent 100%);
+  white-space: nowrap;
+}
+
+.rubber-stamp-false {
+  color: #991b1b;
+  border-color: #991b1b;
+  background-color: rgba(254, 242, 242, 0.8);
+  box-shadow: 1px 1px 0px rgba(153, 27, 27, 0.3);
+}
+
+.rubber-stamp-true {
+  color: #166534;
+  border-color: #166534;
+  background-color: rgba(240, 253, 244, 0.8);
+  box-shadow: 1px 1px 0px rgba(22, 101, 52, 0.3);
+}
+
+.rubber-stamp-misleading {
+  color: #9a3412;
+  border-color: #9a3412;
+  background-color: rgba(255, 247, 237, 0.8);
+  box-shadow: 1px 1px 0px rgba(154, 52, 18, 0.3);
+}
+
+.rubber-stamp-unverifiable {
+  color: #57534e;
+  border-color: #57534e;
+  background-color: rgba(250, 250, 249, 0.8);
+  box-shadow: 1px 1px 0px rgba(87, 83, 78, 0.3);
+}
+
+/* ==========================================================================
+   Physical Rubber Stamp Drop-In and Slight Shake Animations
+   ========================================================================== */
+
+@keyframes rubber-stamp-slam {
+  0% {
+    opacity: 0;
+    transform: scale(2.8) rotate(-20deg) translateY(-45px);
+    filter: blur(4px);
+  }
+  35% {
+    opacity: 0.85;
+    transform: scale(1.4) rotate(-10deg) translateY(-10px);
+    filter: blur(1px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.92) rotate(-3deg) translateY(0);
+    filter: blur(0);
+  }
+  62% {
+    transform: scale(1.06) rotate(-7deg) translate(-3px, -2px);
+  }
+  74% {
+    transform: scale(0.97) rotate(-3.5deg) translate(3px, 2px);
+  }
+  86% {
+    transform: scale(1.02) rotate(-5.5deg) translate(-1px, 1px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-4.5deg) translate(0, 0);
+  }
+}
+
+@keyframes stamp-paper-impact {
+  0%, 45% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-1px, 2px) scale(0.998);
+  }
+  60% {
+    transform: translate(2px, -1px);
+  }
+  70% {
+    transform: translate(-1px, 1px);
+  }
+  85% {
+    transform: translate(0.5px, -0.5px);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.animate-rubber-stamp {
+  animation: rubber-stamp-slam 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+.animate-paper-impact {
+  animation: stamp-paper-impact 0.65s ease-out forwards;
+}
+
+/* Authentic Distressed Stamped Impression Badge */
+.stamp-seal-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Special Elite', 'Courier Prime', monospace;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  padding: 0.4rem 1rem;
+  border: 3px double currentColor;
+  border-radius: 4px;
+  box-shadow: 
+    inset 0 0 0 1.5px currentColor,
+    2px 2px 0px rgba(0, 0, 0, 0.18);
+  mask-image: radial-gradient(circle at 50% 50%, black 80%, rgba(0,0,0,0.8) 95%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, black 80%, rgba(0,0,0,0.8) 95%, transparent 100%);
+  text-shadow: 0.5px 0.5px 0px rgba(0,0,0,0.15);
+  user-select: none;
+}
+
+/* Verdict Display Theme Containers */
+.verdict-stamp-true {
+  background-color: #f0fdf4;
+  border: 2px solid #166534;
+  color: #166534;
+  box-shadow: 3px 3px 0px #166534;
+}
+
+.verdict-stamp-false {
+  background-color: #fef2f2;
+  border: 2px solid #991b1b;
+  color: #991b1b;
+  box-shadow: 3px 3px 0px #991b1b;
+}
+
+.verdict-stamp-misleading {
+  background-color: #fffbeb;
+  border: 2px solid #b45309;
+  color: #b45309;
+  box-shadow: 3px 3px 0px #b45309;
+}
+
+.verdict-stamp-unverifiable {
+  background-color: #f5f5f4;
+  border: 2px solid #44403c;
+  color: #44403c;
+  box-shadow: 3px 3px 0px #44403c;
+}
+
+/* Continuous ticker animation */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-move {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker 40s linear infinite;
+}
+
+.ticker-wrap:hover .ticker-move {
+  animation-play-state: paused;
+}
+
+/* Vintage drop caps */
+.drop-cap:first-letter {
+  float: left;
+  font-family: 'Old English Text MT', 'Playfair Display', Georgia, serif;
+  font-size: 3.4em;
+  line-height: 0.8;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  color: #1c1917;
+  font-weight: bold;
+}
+
+/* Newspaper Stains & Distressed Edge Effects */
+.aged-paper-vignette {
+  background: 
+    radial-gradient(circle at 0% 0%, rgba(68, 51, 31, 0.12) 0%, transparent 20%),
+    radial-gradient(circle at 100% 0%, rgba(68, 51, 31, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 0% 100%, rgba(68, 51, 31, 0.15) 0%, transparent 25%),
+    radial-gradient(circle at 100% 100%, rgba(68, 51, 31, 0.15) 0%, transparent 25%);
+  pointer-events: none;
+}
+
+.ink-smudge-left {
+  position: absolute;
+  left: -20px;
+  top: 180px;
+  width: 70px;
+  height: 120px;
+  opacity: 0.18;
+  background: radial-gradient(ellipse at 40% 50%, #2b1d0c 0%, rgba(43, 29, 12, 0.4) 40%, transparent 70%);
+  filter: blur(4px);
+  pointer-events: none;
+  transform: rotate(-15deg);
+}
+
+.ink-smudge-right {
+  position: absolute;
+  right: -15px;
+  top: 340px;
+  width: 90px;
+  height: 140px;
+  opacity: 0.15;
+  background: radial-gradient(ellipse at 50% 50%, #2b1d0c 0%, rgba(43, 29, 12, 0.3) 45%, transparent 75%);
+  filter: blur(5px);
+  pointer-events: none;
+  transform: rotate(25deg);
+}
+
+.ink-blot-speck {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #2b1d0c;
+  border-radius: 50%;
+  opacity: 0.25;
+  filter: blur(1px);
+  pointer-events: none;
+}
+
+/* Broadsheet Columns */
+.news-columns-2 {
+  column-count: 1;
+  column-gap: 2rem;
+  column-rule: 1px dashed #78716c;
+}
+
+@media (min-width: 768px) {
+  .news-columns-2 {
+    column-count: 2;
+  }
+}
+
+/* Drop Cap for editorial columns */
+.news-dropcap::first-letter {
+  font-family: 'Playfair Display', Georgia, serif;
+  float: left;
+  font-size: 3.5rem;
+  line-height: 0.8;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  font-weight: 900;
+  color: #1c1917;
+}
+
+/* Realistic Inked Rubber Stamps */
+.rubber-stamp {
+  font-family: 'Special Elite', 'Courier Prime', monospace;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.2rem 0.6rem;
+  border-width: 2.5px;
+  border-style: solid;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    inset 0 0 0 1px currentColor,
+    1px 1px 0px rgba(0, 0, 0, 0.15);
+  mask-image: radial-gradient(circle at 50% 50%, black 85%, transparent 100%);
+  transition: transform 0.2s ease;
+}
+
+.rubber-stamp-true {
+  color: #15803d;
+  border-color: #15803d;
+  background-color: rgba(220, 252, 231, 0.6);
+  transform: rotate(-3deg);
+}
+
+.rubber-stamp-false {
+  color: #b91c1c;
+  border-color: #b91c1c;
+  background-color: rgba(254, 226, 226, 0.6);
+  transform: rotate(4deg);
+}
+
+.rubber-stamp-misleading {
+  color: #b45309;
+  border-color: #b45309;
+  background-color: rgba(254, 243, 199, 0.6);
+  transform: rotate(-2deg);
+}
+
+.rubber-stamp-unverifiable {
+  color: #44403c;
+  border-color: #44403c;
+  background-color: rgba(245, 245, 244, 0.6);
+  transform: rotate(3deg);
+}
+
+/* Heavy Newspaper Button */
+.btn-newspaper-stamp {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 3px double #1c1917;
+  background-color: #fdfaf3;
+  color: #1c1917;
+  padding: 0.6rem 1.5rem;
+  box-shadow: 3px 3px 0px #1c1917;
+  transition: all 0.15s ease;
+}
+
+.btn-newspaper-stamp:hover:not(:disabled) {
+  background-color: #1c1917;
+  color: #fdfbf7;
+  box-shadow: 4px 4px 0px #78716c;
+}
+
+.btn-newspaper-stamp:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #1c1917;
+}
+
+/* Telegraph ticker */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.ticker-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-move {
+  display: inline-block;
+  animation: ticker 32s linear infinite;
+}
+
+
+
+
